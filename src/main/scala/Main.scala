@@ -12,12 +12,17 @@ import java.io.FileNotFoundException
   val challenge = day match
     case 1 =>
       // https://adventofcode.com/2022/day/1
+      println("Welcome to day 1")
       val list = day1(data)
       println(s"Top 3 elves with the most calories: ${list.takeRight(3)}")
       var topSum = 0
       for (k, v) <- list.takeRight(3)
       do topSum += v
       println(s"Total calories of top 3 elves: ${topSum}")
+    case 2 =>
+      // https://adventofcode.com/2022/day/2
+      println("Welcome to day 2")
+      day2(data)
 
     case _ =>
       println(
